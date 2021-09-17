@@ -1,8 +1,7 @@
-
 const slider = document.querySelector('.container-slider5');
 
 let mobileSlider = function () {
-  if (window.innerWidth <= 320) {
+  if (window.innerWidth <= 320 && slider.dataset.mobile == 'false' ) {
     mySwiper5 = new Swiper('.container-slider5', {
       sliderPerView: 1,
       spaceBetween: 30,
@@ -17,20 +16,15 @@ let mobileSlider = function () {
         el: '.swiper-pagination-event',
         clickable: true,
       },
-
-      on: {
-        init: function () {
-          if (window.innerWidth > 320) {
-            slider.dataset.mobile == 'false'
-            if (slider.classList.contains('swiper-container-initialized')) {
-              mySwiper5.destroy();
-            }
-          }
-        },
-      },
     });
 
     slider.dataset.mobile = 'true';
+  }
+
+  if(window.innerWidth > 320) {
+    slider.dataset.mobile = 'false';
+    if (slider.classList.contains('swiper-container-initial'))
+    mySwiper5.destroy();
   }
 };
 

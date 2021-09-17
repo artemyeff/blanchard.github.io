@@ -24,6 +24,19 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector(`[data-path="${path}"`).classList.add('is-opens')
         })
 
+        window.onclick = function(event) {
+            if (!event.target.matches('.header__menu-item-button')) {
+              var dropdowns = document.getElementsByClassName("header__menu-choices-open");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('is-open')) {
+                  openDropdown.classList.remove('is-open');
+                }
+              }
+            }
+          }
     })
 
+   
 })
