@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blanchard</title>
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -20,7 +21,14 @@
 <body>
         
     <!-- HEADER -->
-    <header class="header"><div class="burger"></div> 
+    <header class="header">
+        <div class="burger">
+            <svg width="36" height="29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white"/>
+                <path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white"/>
+                <path d="M24 25.0479H0V28.7H24V25.0479Z" fill="white"/>
+            </svg>
+        </div> 
         <div class="header__first-side">
             
             <div class="container container-header__first">
@@ -74,7 +82,7 @@
                         </span>
                         
                         </button>
-                        <div class="header__menu-choices-open one" data-target="1" >
+                        <div class="header__menu-choices-open " data-target="1" >
                             <ul class="header__menu-choices-list" data-simplebar>
                                 <li class="header__menu-choices-item" tabindex="0">1111Тинторетто</li>
                                 <li class="header__menu-choices-item" tabindex="0">Фридрих</li>
@@ -99,10 +107,10 @@
                             <span class="icon-container">
                                 <svg width="12" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path d="M11 5L6 10L0.999997 5" stroke="white"/>
-                              </svg>  
-                              </span>
+                                </svg>  
+                            </span>
                         </button>
-                        <div class="header__menu-choices-open two" data-target="2">
+                        <div class="header__menu-choices-open " data-target="2">
                             <ul class="header__menu-choices-list"  data-simplebar>
                                 <li class="header__menu-choices-item" tabindex="0">222Тинторетто</li>
                                 <li class="header__menu-choices-item" tabindex="0">Фридрих</li>
@@ -131,7 +139,7 @@
                               </svg>  
                               </span>
                         </button>
-                        <div class="header__menu-choices-open three" data-target="3">
+                        <div class="header__menu-choices-open " data-target="3">
                             <ul class="header__menu-choices-list"  data-simplebar>
                                 <li class="header__menu-choices-item" tabindex="0">333Тинторетто</li>
                                 <li class="header__menu-choices-item" tabindex="0">Фридрих</li>
@@ -159,7 +167,7 @@
                               </svg>  
                               </span>
                         </button>
-                        <div class="header__menu-choices-open four" data-target="4">
+                        <div class="header__menu-choices-open " data-target="4">
                             <ul class="header__menu-choices-list"  data-simplebar>
                                 <li class="header__menu-choices-item" tabindex="0">4444Тинторетто</li>
                                 <li class="header__menu-choices-item" tabindex="0">Фридрих</li>
@@ -188,7 +196,7 @@
                                 </svg>  
                             </span>
                         </button>
-                        <div class="header__menu-choices-open five" data-target="5">
+                        <div class="header__menu-choices-open " data-target="5">
                             <ul class="header__menu-choices-list"  data-simplebar>
                                 <li class="header__menu-choices-item" tabindex="0">5555Тинторетто</li>
                                 <li class="header__menu-choices-item" tabindex="0">Фридрих</li>
@@ -216,11 +224,7 @@
 
                 <form class="header__form-search" action="#">
                     <input class="header__input-search" type="text" placeholder="Поиск по сайту" aria-label="Введите то что хотите найти на сайте">
-                    <button class="header__btn-search">
-                        <svg width="23" height="23"  fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
-                        </svg>
+                    <button class="header__btn-search"> 
                     </button>
                 </form>
 
@@ -242,7 +246,7 @@
             <div class="section-hero__page">
               <h1 class="section-hero__heading">Прикоснитесь к прекрасному</h1>
               <p class="section-hero__description">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
-              <a class="btn section-hero__btn" href="">Подписаться на рассылку</a>
+              <a class="btn-hero section-hero__btn " href="">Подписаться на рассылку</a>
             </div>
           </div>
     </section>
@@ -260,7 +264,7 @@
 
     <!-- gallery -->
 
-    <section id="gallery" class="section-gallery">
+    <!-- <section id="gallery" class="section-gallery">
         <div class="container container-gallery">
             <div class="section-gallery__left-side">
                 <div class="section-gallery__left-side-head">
@@ -403,11 +407,11 @@
                 
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- catalog -->
 
-    <section id="catalog" class="section-catalog">
+    <section id="catalog" class="section-catalog" style="display: none;">
         <div class="container container-catalog">
             <div class="section-catalog__head">
                 <h2 class="section-heading section-catalog__heading">Каталог</h2>
@@ -455,7 +459,7 @@
                         <img class="section-catalog__content-image" src="/image/catalog/zaglushka.jpg" alt="Картинка пока пусто">
                         <h3 class="section-catalog__content-name">Что мы о нем знаем?</h3>
                         <p class="section-catalog__content-description">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
-                        <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                        <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                     </div>
 
 
@@ -554,10 +558,11 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1500 по 1599 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+
+                                    <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -569,7 +574,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -579,10 +584,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1600 по 1699 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -594,7 +599,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -605,10 +610,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1700 по 1799 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -620,7 +625,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -631,10 +636,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1800 по 1899 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -646,7 +651,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -657,10 +662,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1900 по 1999 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -672,7 +677,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -696,7 +701,7 @@
                                             <div class="section-catalog__slider-item-description">
                                                 <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                                 <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                                <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                                <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                             </div>
                                         </li>
                                     </ul>
@@ -732,7 +737,7 @@
                         <img class="section-catalog__content-image" src="/image/catalog/zaglushka.jpg" alt="Картинка пока пусто">
                         <h3 class="section-catalog__content-name">Что мы о нем знаем?</h3>
                         <p class="section-catalog__content-description">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
-                        <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                        <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                     </div>
 
 
@@ -744,10 +749,10 @@
                             <h3 class="section-catalog__slider-head">
                             <a href="" class="section-catalog__spoiler-heading">C 1400 по 1499 гг.</a>
                             <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -833,10 +838,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1500 по 1599 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -848,7 +853,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -859,10 +864,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1600 по 1699 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -874,7 +879,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -885,10 +890,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1700 по 1799 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -900,7 +905,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -911,10 +916,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1800 по 1899 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -926,7 +931,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -937,10 +942,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1900 по 1999 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -952,7 +957,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -976,7 +981,7 @@
                                             <div class="section-catalog__slider-item-description">
                                                 <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                                 <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                                <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                                <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                             </div>
                                         </li>
                                     </ul>
@@ -1012,7 +1017,7 @@
                         <img class="section-catalog__content-image" src="/image/catalog/zaglushka.jpg" alt="Картинка пока пусто">
                         <h3 class="section-catalog__content-name">Что мы о нем знаем?</h3>
                         <p class="section-catalog__content-description">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
-                        <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                        <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                     </div>
 
 
@@ -1024,10 +1029,10 @@
                             <h3 class="section-catalog__slider-head">
                             <a href="" class="section-catalog__spoiler-heading">C 1400 по 1499 гг.</a>
                             <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -1115,10 +1120,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1500 по 1599 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -1130,7 +1135,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -1141,10 +1146,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1600 по 1699 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -1156,7 +1161,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -1167,10 +1172,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1700 по 1799 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -1182,7 +1187,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -1193,10 +1198,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1800 по 1899 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -1208,7 +1213,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -1219,10 +1224,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1900 по 1999 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -1234,7 +1239,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -1258,7 +1263,7 @@
                                             <div class="section-catalog__slider-item-description">
                                                 <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                                 <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                                <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                                <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                             </div>
                                         </li>
                                     </ul>
@@ -1296,7 +1301,7 @@
                         <img class="section-catalog__content-image" src="/image/catalog/zaglushka.jpg" alt="Картинка пока пусто">
                         <h3 class="section-catalog__content-name">Что мы о нем знаем?</h3>
                         <p class="section-catalog__content-description">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
-                        <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                        <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                     </div>
 
 
@@ -1401,10 +1406,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1500 по 1599 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -1416,7 +1421,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -1427,10 +1432,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1600 по 1699 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -1442,7 +1447,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -1453,10 +1458,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1700 по 1799 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -1468,7 +1473,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -1479,10 +1484,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1800 по 1899 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -1494,7 +1499,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -1505,10 +1510,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1900 по 1999 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -1520,7 +1525,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -1544,7 +1549,7 @@
                                             <div class="section-catalog__slider-item-description">
                                                 <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                                 <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                                <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                                <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                             </div>
                                         </li>
                                     </ul>
@@ -1581,7 +1586,7 @@
                         <img class="section-catalog__content-image" src="/image/catalog/zaglushka.jpg" alt="Картинка пока пусто">
                         <h3 class="section-catalog__content-name">Что мы о нем знаем?</h3>
                         <p class="section-catalog__content-description">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
-                        <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                        <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                     </div>
 
 
@@ -1597,10 +1602,10 @@
                             <h3 class="section-catalog__slider-head">
                             <a href="" class="section-catalog__spoiler-heading">C 1400 по 1499 гг.</a>
                             <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -1689,10 +1694,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1500 по 1599 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -1704,7 +1709,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -1715,10 +1720,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1600 по 1699 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -1730,7 +1735,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -1741,10 +1746,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1700 по 1799 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -1756,7 +1761,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -1767,10 +1772,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1800 по 1899 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -1782,7 +1787,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -1793,10 +1798,10 @@
                             <h3 class="section-catalog__slider-head">
                                 <a href="" class="section-catalog__spoiler-heading">C 1900 по 1999 гг.</a>
                                 <span class="section-catalog__spoiler-heading-image">
-                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg>
+                                <svg class="section-catalog__spoiler-heading-icon" width="50" height="50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-icon" d="M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>
                             </span>
                             </h3>
                             <div class="section-catalog__slider-content">
@@ -1808,7 +1813,7 @@
                                         <div class="section-catalog__slider-item-description">
                                             <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                             <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                            <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                            <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                         </div>
                                     </li>
                                     
@@ -1832,7 +1837,7 @@
                                             <div class="section-catalog__slider-item-description">
                                                 <h4 class="section-catalog__slider-item-heading">Здесь пока пусто</h4>
                                                 <p class="section-catalog__slider-item-info">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                                                <a class="section-catalog__slider-item-link" href="">В галерею</a>
+                                                <a class="section-catalog__slider-item-link" href="#gallery">В галерею</a>
                                             </div>
                                         </li>
                                     </ul>
@@ -1848,7 +1853,7 @@
 
 
 
-    <section id="events" class="section-events">
+    <!-- <section id="events" class="section-events">
         <div class="container container-events">
             <h2 class="section-heading section-events__heading">События</h2>
             <div class="swiper-container container-slider5 section-events__content" data-mobile="false">
@@ -1929,12 +1934,12 @@
                 <button id="event-btn" class="section-events__btn btn" aria-label="Открыть все события">Все события</button>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <!-- publications -->
 
-    <section id="publications" class="section-publications">
+    <!-- <section id="publications" class="section-publications">
         <div class="container container-publications">
             <div class="section-publications__content">
                 <div class="section-publications__left-side">
@@ -1944,104 +1949,12 @@
                         <h3 class="section-publications__slider-head">
                             <a href="" class="section-publications__spoiler-heading">Категории</a>
                             <span class="section-publications__spoiler-heading-image">
-                                <!-- <svg class="section-publications__spoiler-heading-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
-                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
-                                </svg> -->
+                                
                             </span>
                         </h3>
 
                         <div class="section-publications__slider-content">
-                            <!-- <ul class="section-publications__slider-list">
-                                
-                                <li >
-                                    <label class="section-publications__label" for="check13" tabindex="0">
-                                        <input type="checkbox" class="input_checkbox" name="check" id="check13" tabindex="0" >
-                                        <span t>Бестселлеры</span>
-                                    </label>
-
-                                </li>
-
-                                <li>
-                                    <label class="section-publications__label" for="check14" tabindex="0">
-                                        <input type="checkbox" class="input_checkbox" name="check" id="check14" tabindex="0">
-                                        <span>Искусство</span>
-                                    </label>
-                                </li>
-                                   
-                                <li>
-                                    <label class="section-publications__label" for="check15">
-                                        <input type="checkbox" class="input_checkbox" name="check" id="check15">
-                                        <span>Архитектура</span>
-                                    </label>
-                                </li>
-
-                                <li>
-                                    <label class="section-publications__label" for="check16">
-                                        <input type="checkbox" class="input_checkbox" name="check" id="check16">
-                                        <span>Дизайн</span>
-                                    </label>
-                                </li>
-
-                                <li>
-                                    <label class="section-publications__label" for="check17">
-                                        <input type="checkbox" class="input_checkbox" name="check" id="check17">
-                                        <span>Мода</span>
-                                    </label>
-                                </li>
-
-                                <li>
-                                    <label class="section-publications__label" for="check18">
-                                        <input type="checkbox" class="input_checkbox" name="check" id="check18">
-                                        <span>Детям</span>
-                                    </label>
-                                </li>
-
-                                <li>
-                                    <label class="section-publications__label" for="check19">
-                                        <input type="checkbox" class="input_checkbox" name="check" id="check19">
-                                        <span>Художественная литература</span>
-                                    </label>
-                                </li>
-
-                                <li>
-                                    <label class="section-publications__label" for="check20">
-                                        <input type="checkbox" class="input_checkbox" name="check" id="check20">
-                                        <span>Публицистика</span>
-                                    </label>
-                                </li>
-
-                                <li>
-                                    <label class="section-publications__label" for="check21">
-                                        <input type="checkbox" class="input_checkbox" name="check" id="check21">
-                                        <span>Путеводители</span>
-                                    </label>
-                                </li>
-
-                                <li>
-                                    <label class="section-publications__label" for="check22">
-                                        <input type="checkbox" class="input_checkbox" name="check" id="check22">
-                                        <span>Философия</span>
-                                    </label>
-                                </li>
-
-                                <li>
-                                    <label class="section-publications__label" for="check23">
-                                        <input type="checkbox" class="input_checkbox" name="check" id="check23">
-                                        <span>Учебная литература</span>
-                                    </label>
-                                </li>
-
-                                <li>
-                                    <label class="section-publications__label" for="check24">
-                                        <input type="checkbox" class="input_checkbox" name="check" id="check24">
-                                        <span>Журналы и газеты </span>
-                                    </label>
-                                </li>
-                         
-                            
-                                
-                            </ul> -->
+                           
                               
                         </div> 
 
@@ -2226,13 +2139,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <!-- Project -->
 
 
-    <section id="project" class="section-project">
+    <!-- <section id="project" class="section-project">
         <div class="container container-project">
             <h2 class="section-heading section-project__heading">Проекты</h2>
             <div class="section-project__description">
@@ -2325,11 +2238,11 @@
             </div>
             
         </div>
-    </section>
+    </section> -->
 
     <!-- contacts -->
 
-    <section id="contacts" class="section-contacts">
+    <!-- <section id="contacts" class="section-contacts">
         <div class="container container-contacts">
             <div class="section-heading section-contacts__heading">Контакты</div>
             <div class="section-contacts__content">
@@ -2365,12 +2278,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <!-- footer -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container container-footer">
             <a class="footer__logo" href="#hero">
                 <img src="/image/header/logo.png" alt="Логотип Blanchard Художественная галерея - Главная страница">
@@ -2405,7 +2318,7 @@
                 </li>
             </ul>
         </div>
-    </footer>
+    </footer> -->
 
 
 <script src="/js/inputmask.min.js"></script>

@@ -21,6 +21,30 @@
             spaceBetween: 50,
             slidesPerGroup: 3,
 
+            breakpoints: {
+				750: {
+					slidesPerView: 2,
+					spaceBetween: 34,
+				},
+				970: {
+					slidesPerView: 2,
+                    grid: {
+                    rows: 2,
+                    },
+                    spaceBetween: 34,
+                    slidesPerGroup: 2,
+				},
+				1430: {
+					slidesPerView: 3,
+                    grid: {
+                    rows: 2,
+                    },
+                    spaceBetween: 50,
+                    slidesPerGroup: 3,
+				},
+			},
+
+
             navigation: {
             nextEl: '.swiper-button-next-gallery',
             prevEl: '.swiper-button-prev-gallery',
