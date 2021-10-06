@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blanchard</title>
-    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="image/fav.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -22,16 +22,67 @@
         
     <!-- HEADER -->
     <header class="header">
-        <div class="burger">
-            <svg width="36" height="29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white"/>
-                <path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white"/>
-                <path d="M24 25.0479H0V28.7H24V25.0479Z" fill="white"/>
-            </svg>
-        </div> 
+        
         <div class="header__first-side">
             
             <div class="container container-header__first">
+
+                <div class="burger" id="burger" >
+                    <svg width="100%"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white"/>
+                        <path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white"/>
+                        <path d="M24 25.0479H0V28.7H24V25.0479Z" fill="white"/>
+                    </svg>
+                </div> 
+
+
+                <!-- burger -->
+
+        <div class="burger-menu" id="burgerMenu">
+            <button class="burger-close" id="burgerClose">
+                <svg  width="100%"  viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.7">
+                    <rect width="37.2801" height="3.72801" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.63867 0)" fill="white"/>
+                    <rect width="37.2801" height="3.72801" transform="matrix(0.707093 -0.707121 0.707093 0.707121 -0.000976562 26.3615)" fill="white"/>
+                    </g>
+                </svg>
+            </button>
+
+
+            <nav class="burger__nav">
+                <ul class="header__nav-list burger__nav-list">
+                    <li class="header__nav-list-item burger__nav-list-item">
+                        <a href="#about" class="header__nav-list-link burger__nav-list-link">О нас</a>
+                    </li>
+                    <li class="header__nav-list-item burger__nav-list-item">
+                        <a href="#gallery" class="header__nav-list-link burger__nav-list-link">Галерея</a>
+                    </li>
+                    <li class="header__nav-list-item burger__nav-list-item">
+                        <a href="#catalog" class="header__nav-list-link burger__nav-list-link">Каталог</a>
+                    </li>
+                    <li class="header__nav-list-item burger__nav-list-item">
+                        <a href="#events" class="header__nav-list-link burger__nav-list-link">События</a>
+                    </li>
+                    <li class="header__nav-list-item burger__nav-list-item">
+                        <a href="#publications" class="header__nav-list-link burger__nav-list-link">Издания</a>
+                    </li>
+                    <li class="header__nav-list-item burger__nav-list-item">
+                        <a href="#project" class="header__nav-list-link burger__nav-list-link">Проекты</a>
+                    </li>
+                    <li class="header__nav-list-item burger__nav-list-item">
+                        <a href="#contacts" class="header__nav-list-link burger__nav-list-link">Контакты</a>
+                    </li>
+                </ul> 
+            </nav>
+            <button class="btn burger__signin" >
+                <svg class="burger__signin-icon" width="13px"  viewbox="0 0 13 13"  xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+                </svg>
+                Войти
+            </button>
+        </div>
+
+
                 <a class="header__logo" href="#hero">
                     <img src="/image/header/logo.png" alt="Blanchard Художественная Галерея">
                 </a>
@@ -61,11 +112,41 @@
                     </ul> 
                 </nav>
                 <a href="" class="header__signin" >
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"  width="13" height="13">
+                    <svg class="header__signin-icon" xmlns="http://www.w3.org/2000/svg" fill="none"  width="13" height="13">
                         <path fill="white" d="M 5.12056 9.09278 L 6.13889 10.1111 L 9.75 6.5 L 6.13889 2.88889 L 5.12056 3.90722 L 6.98389 5.77778 H 0 V 7.22222 H 6.98389 L 5.12056 9.09278 Z M 11.5556 0 H 1.44444 C 0.642778 0 0 0.65 0 1.44444 V 4.33333 H 1.44444 V 1.44444 H 11.5556 V 11.5556 H 1.44444 V 8.66667 H 0 V 11.5556 C 0 12.35 0.642778 13 1.44444 13 H 11.5556 C 12.35 13 13 12.35 13 11.5556 V 1.44444 C 13 0.65 12.35 0 11.5556 0 Z"></path>
                     </svg>
                     Войти
                 </a>
+
+                <button class="header__btn-search header__btn-search-mobile header__btn-search-modal" id="searchBtn"> 
+                    <svg width="100%" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+                    </svg>
+                </button> 
+
+<!-- search modal -->
+                <form class="header__form-search-mobile" id="searchForm" action="#">
+                    <button class="header__btn-search-mobile-close" id="searchClose">
+                        <svg  width="100%"  viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.7">
+                            <rect width="37.2801" height="3.72801" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.63867 0)" fill="white"/>
+                            <rect width="37.2801" height="3.72801" transform="matrix(0.707093 -0.707121 0.707093 0.707121 -0.000976562 26.3615)" fill="white"/>
+                            </g>
+                        </svg>
+                    </button>
+                   
+
+                    <input class="header__input-search header__input-search-mobile" id="search" type="text" aria-label="Введите то что хотите найти на сайте">
+                    <button class="header__btn-search header__btn-search-mobile " > 
+                        <svg width="100%" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+                        </svg>
+                    </button> 
+                </form>
+
+
             </div>
          </div>   
          <div class="header__second-side">
@@ -225,11 +306,18 @@
                 <form class="header__form-search" action="#">
                     <input class="header__input-search" type="text" placeholder="Поиск по сайту" aria-label="Введите то что хотите найти на сайте">
                     <button class="header__btn-search"> 
+                        <svg width="100%" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+                        </svg>
                     </button>
                 </form>
 
             </div>
         </div>
+
+
+        
     </header>
 
     <!-- HERO -->
@@ -264,7 +352,7 @@
 
     <!-- gallery -->
 
-    <!-- <section id="gallery" class="section-gallery">
+   <!-- <section id="gallery" class="section-gallery">
         <div class="container container-gallery">
             <div class="section-gallery__left-side">
                 <div class="section-gallery__left-side-head">
@@ -407,11 +495,11 @@
                 
             </div>
         </div>
-    </section> -->
+    </section>  -->
 
     <!-- catalog -->
 
-    <section id="catalog" class="section-catalog" style="display: none;">
+    <!-- <section id="catalog" class="section-catalog" >
         <div class="container container-catalog">
             <div class="section-catalog__head">
                 <h2 class="section-heading section-catalog__heading">Каталог</h2>
@@ -434,7 +522,7 @@
                 </ul>
             </div>
 
-            <!-- tab1 -->
+            
 
             <div class="section-catalog__tab-conteiner" data-target="one">
 
@@ -712,7 +800,21 @@
                 </div>
             </div>
 
-            <!-- tabs2 -->
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+            \\\\\\\
 
             <div class="section-catalog__tab-conteiner" data-target="two">
 
@@ -992,7 +1094,38 @@
                 </div>
             </div>
 
-            <!-- tabs3 -->
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /////////////////////
 
             <div class="section-catalog__tab-conteiner" data-target="three">
 
@@ -1275,7 +1408,27 @@
             </div>
 
 
-            <!-- tab4 -->
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <div class="section-catalog__tab-conteiner is-active" data-target="four">
 
@@ -1560,7 +1713,38 @@
                 </div>
             </div>
 
-            <!-- tab5 -->
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <div class="section-catalog__tab-conteiner" data-target="five">
 
@@ -1847,7 +2031,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- events -->
 
@@ -1934,7 +2118,7 @@
                 <button id="event-btn" class="section-events__btn btn" aria-label="Открыть все события">Все события</button>
             </div>
         </div>
-    </section> -->
+    </section>  -->
 
 
     <!-- publications -->
@@ -2139,7 +2323,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>  -->
 
 
     <!-- Project -->
@@ -2238,7 +2422,7 @@
             </div>
             
         </div>
-    </section> -->
+    </section>  -->
 
     <!-- contacts -->
 
@@ -2278,12 +2462,12 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>  -->
 
 
     <!-- footer -->
 
-    <!-- <footer class="footer">
+     <!-- <footer class="footer">
         <div class="container container-footer">
             <a class="footer__logo" href="#hero">
                 <img src="/image/header/logo.png" alt="Логотип Blanchard Художественная галерея - Главная страница">
@@ -2318,7 +2502,7 @@
                 </li>
             </ul>
         </div>
-    </footer> -->
+    </footer>  -->
 
 
 <script src="/js/inputmask.min.js"></script>
@@ -2371,11 +2555,42 @@
 
 
 
+<script src="/js/burger.js"></script>
+
+
 
 
 <div class="modal" data-modal="1">
-   <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
-   <p class="modal__title">Заголовок окна 1</p>
+   <svg class="modal__cross js-modal-close" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.66664 15.3044L19.3333 0.000153846L20 0.695801L5.33331 16L4.66664 15.3044Z" fill="black"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.66673 -0.000125032L19.3334 15.3041L18.6667 15.9998L4.00006 0.695522L4.66673 -0.000125032Z" fill="black"/>
+    </g>
+    <defs>
+    <filter id="filter0_d" x="0" y="-0.000244141" width="24" height="24.0002" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feflood flood-opacity="0" result="BackgroundImageFix"/>
+    <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feoffset dy="4"/>
+    <fegaussianblur stddeviation="2"/>
+    <fecomposite in2="hardAlpha" operator="out"/>
+    <fecolormatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+    <feblend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+    <feblend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    </defs>
+    </svg>
+   
+   <div class="modal-content">
+        <div class="modal_left-side">
+            <img src="/image/gallery/modalimage.png" alt="">
+        </div>
+        <div class="modal_right-side">
+            <h3 class="modal__name">Казимир Малевич</h3>
+            <p class="modal__picture">"Женщина с граблями</p>
+            <p class="modal__time">1931-1932</p>
+            <p class="modal__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+        </div>
+   </div>
 </div>
 <div class="overlay js-overlay-modal"></div>
 
