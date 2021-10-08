@@ -22,11 +22,19 @@
             slidesPerGroup: 3,
 
             breakpoints: {
-				750: {
+                200: {
+					slidesPerView: 1,
+					spaceBetween: 34,
+                    slidesPerGroup: 1,
+                    grid: {
+                        rows: 1,
+                        },
+				},
+				670: {
 					slidesPerView: 2,
 					spaceBetween: 34,
 				},
-				970: {
+				868: {
 					slidesPerView: 2,
                     grid: {
                     rows: 2,
@@ -34,7 +42,7 @@
                     spaceBetween: 34,
                     slidesPerGroup: 2,
 				},
-				1430: {
+				1300: {
 					slidesPerView: 3,
                     grid: {
                     rows: 2,

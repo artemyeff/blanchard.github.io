@@ -124,7 +124,7 @@
 }
 
 .modal_left-side {
- flex: 1 1 45%;
+ flex: 1 1 44.5%;
 }
 
 .modal_left-side  img{
@@ -133,8 +133,8 @@
  }
 
 .modal_right-side {
-  flex: 1 1 55%;
-  padding-top: 150px;
+  flex: 1 1 55.5%;
+  padding-top: 120px;
   padding-left: 48px;
   padding-right: 50px;
   
@@ -158,7 +158,7 @@
    line-height: 17px;
    font-weight: 400;
    color: #969696;
-   margin-bottom: 20px;
+   margin-bottom: 33px;
  }
 
  .modal__description {
@@ -1048,13 +1048,18 @@
   .section-gallery__right-side {
     flex: 1 1 75%;
     position: relative;
+    width: 100%;
   }
 
   .section-gallery__item {
     position: relative;
     display: flex;
-    width: 350px !important;
     height: 350px;
+    align-items: center;
+    justify-content: center;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100% 100%;
   }
 
   .section-gallery__item::before {
@@ -1211,19 +1216,17 @@
 
 .swiper-pagination-gallery {
   height: 50px !important;
-  width: 50px !important;
+  width: 60px !important;
   color: white;
   position: absolute;
   top: 30px;
-  left: 42px;
+  left: 40px;
 }
 .swiper-button-next-gallery {
   position: absolute;
-  top: 43px !important;
-  left: 102px;
-  background-size: 33px 33px;
-  width: 34px;
-  height: 34px;
+  top: 39px !important;
+  left: 103px;
+  width: 31px;
   transition: border .2s ease-in-out;
 }
 
@@ -1231,30 +1234,31 @@
   transition: fill .2s ease-in-out, stroke .2s ease-in-out;
 }
 
+.swiper-button-next-gallery svg .path1 {
+  stroke: transparent;
+}
 
-.swiper-button-next-gallery:hover svg path {
+
+.swiper-button-next-gallery:hover svg .path1 {
   fill: #9D5CD0;
+  stroke: transparent;
 }
 
-.swiper-button-next-gallery:active  {
-  border: 2px solid #000000;
-  border-radius: 100%;
+.swiper-button-next-gallery:active svg .path1 {
+  stroke: #000000;
 }
 
-.swiper-button-next-gallery:focus-visible  {
-  border: 2px solid #000000;
-  border-radius: 100%;
+.swiper-button-next-gallery:focus-visible svg .path1  {
+  stroke: #000000;
 }
 
 
 
 .swiper-button-prev-gallery {
   position: absolute;
-  top: 43px !important;
-  left: 0px !important;
-  background-size: 33px 33px;
-  width: 34px;
-  height: 34px;
+  top: 39px !important;
+  left: 3px !important;
+  width: 31px;
   transition: border .2s ease-in-out;
 }
 
@@ -1262,18 +1266,22 @@
   transition: fill .2s ease-in-out, stroke .2s ease-in-out;
 }
 
-.swiper-button-prev-gallery:hover svg path {
+.swiper-button-prev-gallery svg .path1 {
+  stroke: transparent;
+}
+
+
+.swiper-button-prev-gallery:hover svg .path1 {
   fill: #9D5CD0;
+  stroke: transparent;
 }
 
-.swiper-button-prev-gallery:active  {
-  border: 2px solid #000000;
-  border-radius: 100%;
+.swiper-button-prev-gallery:active svg .path1 {
+  stroke: #000000;
 }
 
-.swiper-button-prev-gallery:focus-visible  {
-  border: 2px solid #000000;
-  border-radius: 100%;
+.swiper-button-prev-gallery:focus-visible svg .path1  {
+  stroke: #000000;
 }
 
 
@@ -2670,6 +2678,46 @@ margin-right: 50px;
     padding-left: 50px;
   }
 
+
+    /* modal */
+
+
+ 
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  max-width: 595px;
+  height: 100%;
+  max-height: 595px;
+  position: fixed;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  z-index: 30; 
+  box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+  border-radius: 3px;
+  background-color: #fff;
+  transition: 0.3s all;
+}
+
+
+.modal_left-side {
+ flex: 1 1 44.5%;
+}
+
+
+
+.modal_right-side {
+  flex: 1 1 55.5%;
+  
+ }
+
+
+
+
+
   /* header */
 
 
@@ -2749,7 +2797,7 @@ header {
   opacity: 1;
   background-color: black;
   transition: transform .3s ease-in-out;
-  transform: translateX(40%); 
+  transform: translateY(-40%); 
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -3004,13 +3052,14 @@ width: 280px !important;
 
 .section-gallery__right-side {
   flex: 1 1 70%;
-  padding-top: 84px !important;
+  padding-top: 84px;
 
 }
 
  .section-gallery__description {
   line-height: 32px;
   width: 280px;
+  margin-bottom: 10px;
   
 } 
 
@@ -3021,7 +3070,6 @@ width: 280px !important;
 }
 
 .section-gallery__item {
-    width: 280px !important;
     height: 280px;
 } 
 
@@ -3047,6 +3095,23 @@ width: 280px !important;
   flex-direction: column;
   height: 100%;
   width: 6000px; 
+}
+
+
+.swiper-button-next-gallery {
+  position: absolute;
+  left: 101px;
+  width: 31px;
+  transition: border 0.2s ease-in-out 0s;
+  top: 37px !important;
+}
+
+.swiper-button-prev-gallery {
+  position: absolute;
+  top: 37px !important;
+  left: 0px !important;
+  width: 31px;
+  transition: border .2s ease-in-out;
 }
 
 
@@ -3348,6 +3413,32 @@ margin-right: 50px;
   }
 
 
+  /* modal */
+
+
+  .modal {
+    width: 100%;
+    max-width: 670px;
+    height: 100%;
+    max-height: 595px;
+    top: 50%;
+    left: 47%;
+    
+  }
+  
+  
+  .modal_left-side {
+   flex: 1 1 44.8%;
+  }
+  
+  
+  
+  .modal_right-side {
+    flex: 1 1 55.2%;
+    
+   }
+
+
   .header {
     padding-left: 0px;
     padding-right: 0px;
@@ -3404,7 +3495,7 @@ margin-right: 50px;
   opacity: 1;
   background-color: black;
   transition: transform .3s ease-in-out;
-  transform: translateX(40%); 
+  transform: translateY(-40%); 
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -3468,15 +3559,17 @@ margin-right: 50px;
 .section-gallery__description {
 position: absolute;
 left: 50px;
-min-width: 700px;
-bottom: 75px;
+right: 50px;
+/* min-width: 700px; */
+max-width: 700px;
+width: 85%;
+bottom: 60px;
 }
 
 
 .section-gallery__item {
 position: relative;
 display: flex;
-width: 317px !important;
 height: 280px;
 }
 
@@ -3484,10 +3577,11 @@ height: 280px;
 /* swiper2 */
 
 .container-slider2 {
-padding-top: 34px;
+padding-top: 107px;
 display: flex;
 flex-direction: row;
-width: 668px;
+width: 100%;
+/* width: 668px; */
 height: 700px;
 }
 
@@ -3505,6 +3599,30 @@ padding: 0;
 } */
 
 
+.swiper-pagination-gallery {
+  height: 50px !important;
+  width: 60px !important;
+  color: white;
+  position: absolute;
+  top: 55px;
+  left: 33px;
+}
+
+.swiper-button-prev-gallery {
+  position: absolute;
+  top: 61px !important;
+  left: 30px;
+  width: 31px;
+  transition: border .2s ease-in-out;
+}
+
+.swiper-button-next-gallery {
+  position: absolute;
+  top: 61px !important;
+  left: 100px;
+  width: 31px;
+  transition: border .2s ease-in-out;
+}
 
 /* catalog */
 .container-catalog {
@@ -3723,6 +3841,41 @@ margin-right: 60px;
     padding-left: 15px;
   }
 
+/* modal */
+
+  .modal {
+    width: 100%;
+    max-width: 290px;
+    height: 100%;
+    max-height: 750px;
+    top: 50%;
+    left: 47%;
+    
+  }
+
+  .modal-content {
+    flex-direction: column;
+  }
+  
+  
+  .modal_left-side {
+   flex: 1 1 10%;
+  }
+  
+  
+  
+  .modal_right-side {
+    flex: 1 1 90%;
+    padding: 20px;
+    padding-top: 15px;
+    
+   }
+
+   .modal__time {
+     margin-bottom: 5px;
+   }
+
+
   .section-heading {
     font-size: 28px;
     line-height: 38px;
@@ -3839,7 +3992,7 @@ margin-right: 60px;
   opacity: 0.8;
   background-color: black;
   transition: transform .3s ease-in-out;
-  transform: translateX(40%); 
+  transform: translateY(-40%); 
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
@@ -3965,6 +4118,7 @@ margin-right: 60px;
 
 
 
+
 .section-gallery__label {
   font-size: 16px;
   line-height: 32px;
@@ -4008,44 +4162,40 @@ margin-right: 60px;
 .container-slider2 {
   height: 500px !important;
   max-height: 500px;
-
+  width: 100%;
+  z-index: 1;
 }
 
-
-.swiper-slide .slide-slider2 .section-gallery__item {
-  width: 290px;
+.section-gallery__right-side {
+  padding-top: 40px !important;
 }
 
 .section-gallery__item {
-  width: 290px !important;
   height: 367px;
 }
 
 .swiper-pagination-gallery {
   height: 50px !important;
-  width: 50px !important;
+  width: 60px !important;
   color: white;
   position: absolute;
-  top: 430px;
-  
-  left: 120px;
+  top: 433px;
+  left: 115px;
 }
 .swiper-button-next-gallery {
   position: absolute;
-  top: 445px !important;
+  top: 446px !important;
   left: 180px;
   background: url(/image/publications/next.svg) center center;
-  background-size: 30px 30px;
-  width: 30px;
+  width: 31px;
   height: 30px;
 }
 .swiper-button-prev-gallery {
   position: absolute;
-  top: 445px !important;
+  top: 446px !important;
   left: 80px !important;
   background: url(/image/publications/prev.svg) center center;
-  background-size: 30px 30px;
-  width: 30px;
+  width: 31px;
   height: 30px;
 }
 
@@ -4053,10 +4203,12 @@ margin-right: 60px;
   position: absolute;
   left: 15px;
   min-width: 0px;
-  bottom: 45px;
+  bottom: 32px;
   font-size: 16px;
   line-height: 32px;
-  font-weight: 400;
+  font-weight: 600;
+  max-width: 600px;
+  width: 90%;
 }
 
 
