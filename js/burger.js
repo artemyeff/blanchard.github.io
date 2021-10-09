@@ -26,3 +26,13 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 
+document.addEventListener("click", function(e) {
+    let target = e.target;
+    if (!target.closest(".header")) {
+      document.querySelectorAll(".header__form-search-mobile").forEach(el => {
+          el.classList.remove("is-active");
+      })
+    }
+  })
+
+
