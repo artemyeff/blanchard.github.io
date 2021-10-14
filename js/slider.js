@@ -164,6 +164,51 @@
 
 
 
+        // events slider
+
+const mobileSlider = document.querySelector('.section-events__content');
+
+let swiper5;
+
+const mobileEventsSlider = () => {
+  if (window.innerWidth <= 670 && mobileSlider.dataset.mobile == 'false') {
+    swiper5 = new Swiper(mobileSlider, {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 10,
+      loop: true,
+      slideClass: ('section-event__item'),
+
+      autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+    },
+
+      pagination: {
+        el: '.swiper-pagination-event',
+      },
+    });
+
+    mobileSlider.dataset.mobile = 'true';
+  }
+
+  if (window.innerWidth > 670) {
+    mobileSlider.dataset.mobile = 'false';
+
+      if (mobileSlider.classList.contains('swiper-container-initialized')) {
+        swiper5.destroy();
+      }
+  }
+}
+
+mobileEventsSlider();
+
+window.addEventListener('resize', () => {
+  mobileEventsSlider();
+});
+
+
+
 
 
 
