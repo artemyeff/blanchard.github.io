@@ -81,7 +81,7 @@
               slideClass: ('section-publications__item'),
               slidesPerView: 2,
               slidesPerGroup: 2,
-              spaceBetween: 10,
+              spaceBetween: 34,
               pagination: {
                 el: '.swiper-pagination-publications',
                 type: 'fraction',
