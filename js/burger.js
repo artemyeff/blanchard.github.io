@@ -60,9 +60,3 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-$(document).ready(function() {
-    $('#show').click(function(){
-        $('div.section-publications__label').toggle();
-        });
-  });
