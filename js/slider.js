@@ -69,76 +69,15 @@
 
 
 
-    
-        
-        
-
-
-        // swiper3
-//         let mySwiper2 = function () {
-// 	        if (window.innerWidth >= 750) {
-// 		var swiper2 = new Swiper('.container-slider3', {
-
-// 			breakpoints: {
-// 				750: {
-// 					slidesPerView: 2,
-// 					spaceBetween: 34,
-// 				},
-// 				970: {
-// 					slidesPerView: 2,
-// 					spaceBetween: 50,
-// 				},
-// 				1300: {
-// 					slidesPerView: 3,
-// 					slidesPerColumn: 1,
-// 					slidesPerGroup: 1,
-// 					spaceBetween: 50,
-// 				},
-// 			},
-// 			autoplay: {
-// 				delay: 6000,
-// 				disableOnInteraction: false,
-// 			},
-
-// 			navigation: {
-// 				nextEl: '.swiper-button-next-publications',
-// 				prevEl: '.swiper-button-prev-publications',
-// 			},
-
-
-// 			pagination: {
-// 				el: '.swiper-pagination-publications',
-// 				clickable: true,
-// 				type: 'fraction',
-// 			},
-
-// 		});
-
-// 		swiper2.on('resize', function () {
-// 			if (innerWidth < 750) {
-// 				swiper2.destroy();
-// 			}
-// 		});
-// 	}
-// }
-
-//         window.addEventListener('resize', () => {
-//             mySwiper2();
-//         })
-
-//         mySwiper2();
 
 
 
+          const sliderDesktop3 = document.querySelector('.container-slider3');
 
-
-
-
-        const sliderDesktop2 = document.querySelector('.container-slider3');
-        let swiper2;
-        const desctopSlider = () => {
-          if (window.innerWidth >= 670 && sliderDesktop2.dataset.desktop == 'true') {
-            swiper2 = new Swiper(sliderDesktop3, {
+          let swiper4;
+          const breakpoint = window.matchMedia( '(max-width: 670px)' );
+          function swiperCall() {
+            swiper4 = new Swiper(sliderDesktop3, {
               slideClass: ('section-publications__item'),
               slidesPerView: 2,
               slidesPerGroup: 2,
@@ -150,17 +89,19 @@
               navigation: {
                 nextEl: '.swiper-button-next-publications',
                 prevEl: '.swiper-button-prev-publications',
+  
               },
               breakpoints:{
                 750: {
                   slidesPerView: 2,
                   spaceBetween: 34,
                 },
+  
                 970:{
                   slidesPerView: 2,
-            			spaceBetween: 50,
+                  spaceBetween: 50,
                 },
-      
+  
                 1300:{
                   slidesPerView: 3,
                   slidesPerColumn: 1,
@@ -169,20 +110,48 @@
                 }
               }
             })
-            sliderDesktop3.dataset.desktop == 'false'
           }
-          if (window.innerWidth <= 670) {
-            sliderDesktop2.dataset.mobile = 'false';
-              if (sliderDesktop2.classList.contains('swiper-container-initialized')) {
-                swiper3.destroy();
+  
+          function breakpointSwiper4() {
+            if ( breakpoint.matches === true ) {
+            if ( swiper4 !== undefined ) swiper4.destroy( true, true );
+  
+  
+            // or/and do nothing
+  
+            return;
+  
+        
+  
+              // else if a small viewport and single column layout needed
+  
+              } else if ( breakpoint.matches === false ) {
+  
+        
+  
+                // fire small viewport version of swiper
+  
+                return swiperCall();
+  
+        
+  
               }
+  
           }
-        }
-        desctopSlider();
-        window.addEventListener('resize', () => {
-          desctopSlider();
-        })
-      
+  
+  
+  
+          breakpoint.addListener(breakpointSwiper4);
+  
+          breakpointSwiper4()
+
+
+    
+        
+        
+
+
+ 
 
 
         // swiper4
@@ -247,6 +216,7 @@ const mobileEventsSlider = () => {
 
       pagination: {
         el: '.swiper-pagination-event',
+        clickable: true,
       },
     });
 

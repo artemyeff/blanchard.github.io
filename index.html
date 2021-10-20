@@ -27,13 +27,13 @@
             
             <div class="container container-header__first">
 
-                <div class="burger" id="burger" >
-                    <svg width="50" heigth="50" viewbox="0 0 50 50"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                <button class="burger" id="burger" >
+                    <svg width="100%"  viewbox="0 0 50 50"  fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white"/>
                         <path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white"/>
                         <path d="M24 25.0479H0V28.7H24V25.0479Z" fill="white"/>
                     </svg>
-                </div> 
+                </button> 
 
 
                 <!-- burger -->
@@ -125,7 +125,7 @@
                     </svg>
                 </button> 
 
-<!-- search modal -->
+        <!-- search modal -->
                 <form class="header__form-search-mobile" id="searchForm" action="#">
                     <button class="header__btn-search-mobile-close" id="searchClose">
                         <svg  width="100%"   viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -318,27 +318,27 @@
 
 
         
-    </header>
+   
 
     <!-- HERO -->
 
-    <section class="section-hero" id="hero">
-        <div class="swiper container-slider1">
-            <div class="swiper-wrapper wrapper-slider1">
-              <div class="swiper-slide slide-slider1 slide-one"></div>
-              <div class="swiper-slide slide-slider1 slide-two"></div>
-              <div class="swiper-slide slide-slider1 slide-three"></div>
+        <section class="section-hero" id="hero">
+            <div class="swiper container-slider1">
+                <div class="swiper-wrapper wrapper-slider1">
+                <div class="swiper-slide slide-slider1 slide-one"></div>
+                <div class="swiper-slide slide-slider1 slide-two"></div>
+                <div class="swiper-slide slide-slider1 slide-three"></div>
+                </div>
             </div>
-        </div>
-        <div class="container section-hero__content">
-            <div class="section-hero__page">
-              <h1 class="section-hero__heading">Прикоснитесь к прекрасному</h1>
-              <p class="section-hero__description">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
-              <a class="btn-hero section-hero__btn " href="">Подписаться на рассылку</a>
+            <div class="container section-hero__content">
+                <div class="section-hero__page">
+                <h1 class="section-hero__heading">Прикоснитесь к прекрасному</h1>
+                <p class="section-hero__description">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+                <a class="btn-hero section-hero__btn " href="">Подписаться на рассылку</a>
+                </div>
             </div>
-          </div>
-    </section>
-
+        </section>
+    </header>
     <!-- ABOUT -->
 
     <section id="about" class="section-about">
@@ -2231,8 +2231,11 @@
                 <ul class="swiper-wrapper wrapper-slider5 section-events__list">
                     <li class="swiper-slide slide-slider5 section-event__item">
                         <div class="section-event__item-container">
-                            <img class="section-event__item-img" src="/image/events/image1.jpg" alt="Изображение - Книжная гравюра в живом восприятии" aria-label="Изображение - Книжная гравюра в живом восприятии">
-                            <p class="section-event__item-info">Музей им. Щусева <br> с 20 марта по 30 апреля</p>
+                            <figure>
+                                <img class="section-event__item-img" src="/image/events/image1.jpg" alt="Изображение - Книжная гравюра в живом восприятии" aria-label="Изображение - Книжная гравюра в живом восприятии">
+                                <figcaption class="section-event__item-info">Музей им. Щусева <br> с 20 марта по 30 апреля</figcaption>
+                            </figure>
+                            
                             <div class="section-event__item-content">
                                 <h3 class="section-event__item-heading">Книжная гравюра в живом восприятии</h3>
                                 <p class="section-event__item-description">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
@@ -2245,8 +2248,11 @@
         
                     <li class="swiper-slide slide-slider5 section-event__item">
                         <div class="section-event__item-container">
-                            <img class="section-event__item-img" src="/image/events/image2.jpg" alt="Изображение - «Открытая дискуссия». Дмитрий Петров и Сергей Ильин." aria-label="Изображение - «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.">
-                            <p class="section-event__item-info">ММОМА<br> 24 марта 19:00</p>
+                            <figure>
+                                <img class="section-event__item-img" src="/image/events/image2.jpg" alt="Изображение - «Открытая дискуссия». Дмитрий Петров и Сергей Ильин." aria-label="Изображение - «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.">
+                                <figcaption class="section-event__item-info">ММОМА<br> 24 марта 19:00</figcaption>
+                            </figure>
+                            
                             <div class="section-event__item-content">
                                 <h3 class="section-event__item-heading">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
                                 <p class="section-event__item-description">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
@@ -2259,8 +2265,10 @@
         
                     <li class="swiper-slide slide-slider5 section-event__item">
                         <div class="section-event__item-container">
-                            <img class="section-event__item-img" src="/image/events/image3.jpg" alt="Изображение - Выставка «Формация 2020»" aria-label="Изображение - Выставка «Формация 2020»">
-                            <p class="section-event__item-info">Еврейский музей<br> с 31 марта по 21 апреля</p>
+                            <figure>
+                                <img class="section-event__item-img" src="/image/events/image3.jpg" alt="Изображение - Выставка «Формация 2020»" aria-label="Изображение - Выставка «Формация 2020»">
+                                <figcaption class="section-event__item-info">Еврейский музей<br> с 31 марта по 21 апреля</figcaption>
+                            </figure>
                             <div class="section-event__item-content">
                                 <h3 class="section-event__item-heading">Выставка «Формация 2020»</h3>
                                 <p class="section-event__item-description">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
@@ -2273,8 +2281,10 @@
         
                     <li class="swiper-slide slide-slider5 section-event__item">
                         <div class="section-event__item-container">
-                            <img class="section-event__item-img" src="/image/events/image4.jpg" alt="Изображение - XXIV Международная биеннале молодого искусства" aria-label="Изображение - XXIV Международная биеннале молодого искусства">
-                            <p class="section-event__item-info">Третьяковка на Крымском валу<br> с 30 марта по 30 апреля</p>
+                            <figure>
+                                <img class="section-event__item-img" src="/image/events/image4.jpg" alt="Изображение - XXIV Международная биеннале молодого искусства" aria-label="Изображение - XXIV Международная биеннале молодого искусства">
+                                <figcaption class="section-event__item-info">Третьяковка на Крымском валу<br> с 30 марта по 30 апреля</figcaption>
+                            </figure>
                             <div class="section-event__item-content">
                                 <h3 class="section-event__item-heading">XXIV Международная биеннале молодого искусства</h3>
                                 <p class="section-event__item-description">Внезапно, реплицированные с зарубежных источников, современные исследования.</p>
@@ -2287,8 +2297,10 @@
         
                     <li class="swiper-slide slide-slider5 section-event__item">
                         <div class="section-event__item-container">
-                            <img class="section-event__item-img" src="/image/events/image5.jpg" alt="Изображение - Джон Винзор. Фотографии из серии «Метафора серебра»" aria-label="Изображение - Джон Винзор. Фотографии из серии «Метафора серебра»">
-                            <p class="section-event__item-info">ММАМ <br> с 8 апреля по 20 мая</p>
+                            <figure>
+                                <img class="section-event__item-img" src="/image/events/image5.jpg" alt="Изображение - Джон Винзор. Фотографии из серии «Метафора серебра»" aria-label="Изображение - Джон Винзор. Фотографии из серии «Метафора серебра»">
+                                <figcaption class="section-event__item-info">ММАМ <br> с 8 апреля по 20 мая</figcaption>
+                            </figure>
                             <div class="section-event__item-content">
                                 <h3 class="section-event__item-heading">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
                                 <p class="section-event__item-description">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
@@ -2316,24 +2328,8 @@
                 <div class="section-publications__left-side">
                     <h2 class="section-heading section-publications__heading">Издания</h2>
 
-                    <div id="accordion6" class="accordion-publications"> 
-                        <h3 class="section-publications__slider-head">
-                            <a href="" class="section-publications__spoiler-heading">Категории</a>
-                            <span class="section-publications__spoiler-heading-image">
-                                
-                            </span>
-                        </h3>
-
-                        <div class="section-publications__slider-content">
-                           
-                              
-                        </div> 
-
-
-                    </div>
-
                     
-                    <h3 class="section-publications__checkbox-heading">Категории</h3>
+                    <button class="section-publications__checkbox-heading" type="button" id="show">Категории</button>
                     <form class="section-publications__checkbox" action="#">
                         
                             <label class="section-publications__label" for="check1" >
@@ -2468,40 +2464,53 @@
                         </li>
 
                         <li class="swiper-slide slide-slider3 section-publications__item">
-                            <img class="section-publications__item-image" src="/image/publications/1.png" alt="Картинка - Искусство цвета" aria-label="Картинка - Искусство цвета">
+                            <img class="section-publications__item-image" src="/image/publications/4.png" alt="Картинка - Искусство цвета" aria-label="Картинка - Искусство цвета">
                             <div class="section-publications__item-content">
                                 <div class="section-publications__item-info">
-                                    <h3 class="section-publications__item-name">Искусство цвета</h3>
-                                    <p class="section-publications__item-autor">Иттен, Иоханнес</p>
+                                    <h3 class="section-publications__item-name">Николай Ильин</h3>
+                                    <p class="section-publications__item-autor">Кричевский, Владимир</p>
                                 </div>
-                                <p class="section-publications__item-price" > 620 руб</p>
+                                <p class="section-publications__item-price" > 1 100 руб</p>
                             </div>
                             <button class="btn section-publications__item-btn">Заказать</button>
                         </li>
                         
                         <li class="swiper-slide slide-slider3 section-publications__item">
-                           <img class="section-publications__item-image" src="/image/publications/2.png" alt="Картинка - Типографика" aria-label="Картинка - Типографика">
+                           <img class="section-publications__item-image" src="/image/publications/5.png" alt="Картинка - Типографика" aria-label="Картинка - Типографика">
                             <div class="section-publications__item-content">
                                 <div class="section-publications__item-info">
-                                    <h3 class="section-publications__item-name">Типографика</h3>
-                                    <p class="section-publications__item-autor">Рудер, Эмиль</p>
+                                    <h3 class="section-publications__item-name">Модульные сетки в граф...</h3>
+                                    <p class="section-publications__item-autor">Мюллер-Брокманн, Йозеф</p>
                                 </div>
-                                <p class="section-publications__item-price" > 2 450 руб</p>
+                                <p class="section-publications__item-price" > 1 450 руб</p>
                             </div>
                             <button class="btn section-publications__item-btn">Заказать</button> 
                         </li>
                         
                         <li class="swiper-slide slide-slider3 section-publications__item">
-                            <img class="section-publications__item-image" src="/image/publications/3.png" alt="Картинка - Книга про буквы" aria-label="Картинка - Книга про буквы">
+                            <img class="section-publications__item-image" src="/image/publications/6.png" alt="Картинка - Книга про буквы" aria-label="Картинка - Книга про буквы">
                             <div class="section-publications__item-content">
                                 <div class="section-publications__item-info">
-                                    <h3 class="section-publications__item-name">Книга про буквы</h3>
-                                    <p class="section-publications__item-autor">Гордон, Юрий</p>
+                                    <h3 class="section-publications__item-name">Эволюция графических ст...</h3>
+                                    <p class="section-publications__item-autor">Хеллер, Чваст</p>
+                                </div>
+                                <p class="section-publications__item-price" > 3 200 руб</p>
+                            </div>
+                            <button class="btn section-publications__item-btn">Заказать</button>
+                         </li> 
+
+
+                         <li class="swiper-slide slide-slider3 section-publications__item">
+                            <img class="section-publications__item-image" src="/image/publications/7.png" alt="Картинка - Книга про буквы" aria-label="Картинка - Книга про буквы">
+                            <div class="section-publications__item-content">
+                                <div class="section-publications__item-info">
+                                    <h3 class="section-publications__item-name">Искусство и визуальное в...</h3>
+                                    <p class="section-publications__item-autor">Арнхейм, Рудольф</p>
                                 </div>
                                 <p class="section-publications__item-price" > 2 200 руб</p>
                             </div>
                             <button class="btn section-publications__item-btn">Заказать</button>
-                         </li> 
+                         </li>
 
                     </ul>
                 
@@ -2739,6 +2748,7 @@
 </script>
 
 <script src="/js/modal.js"></script>
+
 
 
 
