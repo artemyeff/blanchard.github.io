@@ -36,27 +36,48 @@ document.addEventListener("click", function(e) {
 
 
 
-//  event
+//  publications
+
+const checkboxHeading = document.querySelector('.section-publications__checkbox-heading')
+const checkboxLabels = document.querySelectorAll('.section-publications__label')
 
 window.addEventListener('DOMContentLoaded', function () {
-    document.querySelector('.section-publications__checkbox-heading').addEventListener('click', function () {
-        document.querySelector('.section-publications__checkbox').classList.toggle('is-open')    
+    checkboxHeading.addEventListener('click', function (event) {
+        event.currentTarget.classList.toggle('is-shown')
+        checkboxLabels.forEach(el => {
+            if (el.querySelector('.input_checkbox').checked) {
+                el.classList.add('is-open')
+            }
+            else {
+                el.classList.toggle("is-open");
+            }
+        
+        })   
     })
 })
 
 
+
+
 window.addEventListener('DOMContentLoaded', function () {
-    document.querySelector('.section-publications__checkbox-heading').addEventListener('click', function () {
-        document.querySelector('.section-publications__checkbox-heading').classList.toggle('is-opens')    
+    checkboxLabels.forEach(el => {
+        el.addEventListener('click', function (event) {
+            const label =  event.currentTarget
+            if(!checkboxHeading.classList.contains('is-shown') && label.classList.contains('is-open')) {
+                label.classList.remove('is-open')
+            }
+
+            if (label.querySelector('.input_checkbox').checked) {
+                label.classList.add('is-active')
+            } else {
+                label.classList.remove('is-active')
+            }
+        })
     })
 })
 
 
-window.addEventListener('DOMContentLoaded', function () {
-    document.querySelector('.section-publications__checkbox-heading').addEventListener('click', function () {
-        document.querySelectorAll('.section-publications__label').classList.add('is-open')    
-    })
-})
+
 
 
 

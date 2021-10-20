@@ -2425,7 +2425,7 @@ margin-right: 50px;
   
  
   .section-project__item {
-    width: 450px !important;
+    /* width: 450px !important; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2441,7 +2441,9 @@ margin-right: 50px;
   }
 
   .container-slider4 {
-    max-width: 1450px;
+    margin-left: 75px;
+    margin-right: 75px;
+    max-width: 100%;
     min-height: 150px;
   }
 
@@ -3435,8 +3437,7 @@ right: 20px;
 
 
  .section-project__slider-heading {
-   
-   font-size: 23px;
+   font-size: 24px;
  }
  
  .section-project__list {
@@ -3446,12 +3447,14 @@ right: 20px;
   
  
   .section-project__item {
-    width: 384px !important;
+    /* width: 384px !important; */
     height: 128px;;
   }
 
   .container-slider4 {
-    max-width: 820px ;
+    margin-right: 55px;
+    margin-left: 55px;
+    max-width: 100%;
     min-height: 150px;
   }
 
@@ -3966,7 +3969,7 @@ height: 340px !important;
 
 .section-project__description {
   max-width: 660px;
-  margin-bottom: 7px;
+  margin-bottom: 27px;
 }
 
 
@@ -3980,7 +3983,7 @@ height: 340px !important;
 }
 
 .container-slider4 {
-  max-width: 562px;
+  padding-top: 25px;
 }
 
 
@@ -4690,7 +4693,7 @@ padding-right: 25px;
 }
 
 
-.section-publications__checkbox-heading.is-opens::before {
+.section-publications__checkbox-heading.is-shown::before {
   transform: rotateX(180deg);
 }
 
@@ -4703,8 +4706,31 @@ padding-right: 25px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   margin-bottom: -1px;
   position: relative;
+  transition: all .2s ease-in-out;
+  display: none;
+  /* visibility: hidden; */
 }
 
+.section-publications__label.is-open {
+  display: flex;
+}
+
+
+.section-publications__label::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  background-image: url(/image/publications/close.svg);
+  background-size: 10px 10px;
+  width: 10px;
+  height: 10px;
+  opacity: 0;
+}
+
+.section-publications__label.is-active::before {
+  content: '';
+  opacity: 1;
+}
 
 
 
@@ -4713,17 +4739,10 @@ padding-right: 25px;
 
 
 .section-publications__checkbox {
-  opacity: 0;
-  visibility: hidden;
-  max-height: 0;
-  transition: opacity .2s ease-in-out, max-height .2s ease-in-out;
+  transition: all .2 ease-in-out;
 }
 
-.section-publications__checkbox.is-open {
-  visibility: visible;
-  opacity: 1;
-  max-height: 450px;
-}
+
 
 
 
@@ -4961,7 +4980,8 @@ padding: 10px 34px;
 }
 
 .container-slider4 {
-  max-width: 195px;
+  margin-left: 50px;
+  margin-right: 50px;
   min-height: 65px;
 }
 
@@ -4970,7 +4990,6 @@ padding: 10px 34px;
 }
 
 .section-project__item {
-  width: 195px !important;
   height: 65px !important;
 }
 
