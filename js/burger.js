@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', function () {
                 el.classList.add('is-open')
             }
             else {
-                el.classList.toggle("is-open");
+                el.classList.toggle("is-open")
             }
         
         })   
