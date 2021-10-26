@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blanchard</title>
     <link rel="icon" href="image/fav.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/swiper-bundle.css" />
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/css/jquery-ui.css">
     <link rel="stylesheet" href="/css/choices.min.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+    <link rel="stylesheet" href="/css/simplebar.css"/>
     <link rel="stylesheet" href="/css/style.css">
+
     
+    
+        
     
 </head>
 <body>
@@ -381,20 +381,24 @@
 
 
             <div class="swiper container-slider2 section-gallery__right-side">
-                <div style="z-index: 101;" class="swiper-pagination swiper-pagination-gallery " tabindex="0"></div>
-                <div style="z-index: 101;" class="swiper-button-prev swiper-button-prev-gallery">
-                    <svg width="100%"  viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="path1" d="M15 29C22.732 29 29 22.732 29 15C29 7.26801 22.732 0.999999 15 0.999999C7.26801 1 1 7.26801 1 15C1 22.732 7.26801 29 15 29Z" fill="#666666" stroke="#666666" stroke-width="2"/>
-                        <path d="M16 20L11 15L16 10" stroke="white"/>
-                    </svg>
+
+                <div class="navigation-slider section-gallery__navigation-slider">
+                    
+                    <button style="z-index: 101;" class="swiper-button-prev-gallery">
+                        <svg width="100%"  viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path1" d="M15 29C22.732 29 29 22.732 29 15C29 7.26801 22.732 0.999999 15 0.999999C7.26801 1 1 7.26801 1 15C1 22.732 7.26801 29 15 29Z" fill="#666666" stroke="#666666" stroke-width="2"/>
+                            <path d="M16 20L11 15L16 10" stroke="white"/>
+                        </svg>
+                    </button>
+                    <div style="z-index: 101;" class="swiper-pagination-gallery " tabindex="0"></div>
+                    <button style="z-index: 101;" class="swiper-button-next-gallery" tabindex="0">
+                        <svg  width="100%" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path1" d="M15 29C22.732 29 29 22.732 29 15C29 7.26801 22.732 0.999999 15 0.999999C7.26801 1 1 7.26801 1 15C1 22.732 7.26801 29 15 29Z" fill="#666666" stroke="#666666" stroke-width="2"/>
+                            <path d="M14 20L19 15L14 10" stroke="white"/>
+                        </svg> 
+                    </button>
                 </div>
-                <div style="z-index: 101;" class="swiper-button-next swiper-button-next-gallery" tabindex="0">
-                    <svg  width="100%" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="path1" d="M15 29C22.732 29 29 22.732 29 15C29 7.26801 22.732 0.999999 15 0.999999C7.26801 1 1 7.26801 1 15C1 22.732 7.26801 29 15 29Z" fill="#666666" stroke="#666666" stroke-width="2"/>
-                        <path d="M14 20L19 15L14 10" stroke="white"/>
-                    </svg>
-                        
-                </div>
+                
                 <ul class="swiper-wrapper wrapper-slider2">
                     
                         <li class="swiper-slide slide-slider2 section-gallery__item gallery_img1 js-open-modal" data-modal="1">
@@ -2330,7 +2334,7 @@
 
                     
                     <button class="section-publications__checkbox-heading" type="button" id="show">Категории</button>
-                    <form class="section-publications__checkbox" action="#">
+                    <form class="section-publications__checkbox categories" action="#">
                         
                             <label class="section-publications__label" for="check1" >
                                 <input type="checkbox" class="input_checkbox" name="check" id="check1" >
@@ -2412,19 +2416,22 @@
                 
                 <div class="swiper container-slider3 section-publications__right-side" data-desktop="true" >
 
-                    <div style="z-index: 101;" class="swiper-pagination swiper-pagination-publications " ></div>
-                    <div style="z-index: 101;" class="swiper-button-prev swiper-button-prev-publications" >
-                        <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Кнопка прокрутки назад">
-                            <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#666666"/>
-                            <path d="M16 20L11 15L16 10" stroke="white"/>
-                        </svg>
+                    <div class="section-publications__navigation-slider">
+                        <button style="z-index: 101;" class="swiper-button-prev-publications" >
+                            <svg width="100%"  viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="path1" d="M15 29C22.732 29 29 22.732 29 15C29 7.26801 22.732 0.999999 15 0.999999C7.26801 1 1 7.26801 1 15C1 22.732 7.26801 29 15 29Z" fill="#666666" stroke="#666666" stroke-width="2"/>
+                                <path d="M16 20L11 15L16 10" stroke="white"/>
+                            </svg>
+                        </button>
+                        <div style="z-index: 101;" class="swiper-pagination-publications " ></div>
+                        <button style="z-index: 101;" class="swiper-button-next-publications" >
+                            <svg  width="100%" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="path1" d="M15 29C22.732 29 29 22.732 29 15C29 7.26801 22.732 0.999999 15 0.999999C7.26801 1 1 7.26801 1 15C1 22.732 7.26801 29 15 29Z" fill="#666666" stroke="#666666" stroke-width="2"/>
+                                <path d="M14 20L19 15L14 10" stroke="white"/>
+                            </svg> 
+                        </button>
                     </div>
-                    <div style="z-index: 101;" class="swiper-button-next swiper-button-next-publications" >
-                        <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Кнопка прокрутки вперед">
-                            <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#666666"/>
-                            <path d="M14 20L19 15L14 10" stroke="white"/>
-                        </svg>
-                    </div>
+                    
 
                     <ul class="swiper-wrapper wraper-slider3 section-publications__list">
                         <li class="swiper-slide slide-slider3 section-publications__item">
@@ -2562,7 +2569,22 @@
 
             <h3 class="section-project__slider-heading">Партнеры проектов:</h3>
             <div class="slider-project">
+                <div class="section-project__navigation-slider">
+                    <button style="z-index: 101;" class="swiper-button-prev-project" tabindex="0" >
+                        <svg width="100%"  viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path1" d="M15 29C22.732 29 29 22.732 29 15C29 7.26801 22.732 0.999999 15 0.999999C7.26801 1 1 7.26801 1 15C1 22.732 7.26801 29 15 29Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                            <path d="M16 20L11 15L16 10" stroke="black"/>
+                        </svg>
+                    </button>
+                    <button style="z-index: 101;" class="swiper-button-next-project" tabindex="0" >
+                        <svg  width="100%" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path1" d="M15 29C22.732 29 29 22.732 29 15C29 7.26801 22.732 0.999999 15 0.999999C7.26801 1 1 7.26801 1 15C1 22.732 7.26801 29 15 29Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2"/>
+                            <path d="M14 20L19 15L14 10" stroke="black"/>
+                        </svg> 
+                    </button>    
+                </div>
                 <div class="swiper container-slider4">
+                    
                     <ul class="swiper-wrapper wrapper-slider4 section-project__list">
                         <li class="swiper-slide slide-slider4 section-project__item" tabindex="0">
                             <img class="section-project__item-image" src="/image/project/1.png" alt="Партнер №1" >
@@ -2603,18 +2625,8 @@
                         
                      
                 </div>
-                <div style="z-index: 101;" class="swiper-button-prev swiper-button-prev-project" tabindex="0" >
-                    <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Кнопка прокрутки назад">
-                        <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#ECECEC"/>
-                        <path d="M16 20L11 15L16 10" stroke="black"/>
-                    </svg>
-                </div>
-                <div style="z-index: 101;" class="swiper-button-next swiper-button-next-project" tabindex="0" >
-                    <svg width="30" height="30"  fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Кнопка прокрутки вперед">
-                        <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#ECECEC"/>
-                        <path d="M14 20L19 15L14 10" stroke="black"/>
-                    </svg>
-                </div>   
+                
+                 
             </div>
             
         </div>
@@ -2623,10 +2635,10 @@
     <!-- contacts -->
 
      <section id="contacts" class="section-contacts">
-        <div class="container container-contacts">
-            <div class="section-heading section-contacts__heading">Контакты</div>
+        <!-- <div class="container container-contacts"> -->
+            <div class="section-heading section-contacts__heading container">Контакты</div>
             <div class="section-contacts__content">
-                <div class="section-contacts__left-side">
+                <div class="section-contacts__left-side ">
                     <h3 class="section-contacts__left-side-heading">Шоурум №4</h3>
                     <p class="section-contacts__left-side-addres" >Леонтьевский переулок, дом 5/1</p>
                     <form  action="http://jsonplaceholder.typicode.com/posts" class="section-contacts__form">
@@ -2653,11 +2665,11 @@
                     
 
                 </div>
-                <div class="section-contacts__right-side" >
-                    <div id="myMap1" style="height: 100%; width: 100%" ></div>
+                <div id="myMap1" class="section-contacts__right-side" >
+                    
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
     </section> 
 
 
@@ -2702,63 +2714,9 @@
     </footer> 
 
 
-<script src="/js/inputmask.min.js"></script>
-<script src="/js/just-validate.min.js"></script>
-<script>
-    var selector = document.querySelector("input[type='tel']");
-    var im = new Inputmask("+7 (999)-999-99-99");
-
-    im.mask(selector);
-    new JustValidate('.section-contacts__form', {
-        rules: {
-            name: {
-                required: true,
-                minLength: 3,
-                maxLength: 10
-            },
-
-            tel: {
-                required:true,
-                function: (name, value) => {
-                    const phone = selector.inputmask.unmaskedvalue()
-                    return Number(phone) && phone.length === 10
-                }
-            },
-        },
-        messages: {
-            name: {
-                minLength: 'Минимальная длина поля 3 символа',
-                required: 'Поле обязательно для заполнения!'
-            },
-            tel: {
-              required: 'Поле обязательно для заполнения!'  
-            } 
-            
 
 
-
-            },
-            
-
-            submitHandler: function (form, values, ajax) {
-
-                console.log('tel')
-            },
-
-    });
-</script>
-
-<script src="/js/modal.js"></script>
-
-
-
-
-<script src="/js/burger.js"></script>
-
-
-
-
-<div class="modal" data-modal="1">
+<div style="z-index: 1000" class="modal" data-modal="1">
     <svg class="modal__cross js-modal-close" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z" fill="black"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
@@ -2776,167 +2734,24 @@
         </div>
    </div>
 </div>
-<div class="overlay js-overlay-modal"></div>
+<div style="z-index: 999" class="overlay js-overlay-modal"></div>
 
-
-
-
-
-
-    <!-- swiper -->
+<script src="/js/inputmask.min.js"></script>
+<script src="/js/just-validate.min.js"></script>
 <script src="/js/swiper-bundle.min.js"></script>
-<script src="/js/slider.js"></script>
-<script src="/js/mobile-swiper.js"></script>
-
-
-
-
-<!-- yandex maps -->
 <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
-<script>
-
-    ymaps.ready(init);
-    function init(){
-        var myMap = new ymaps.Map("myMap1", {
-            center: [55.75782074110136,37.60973755100408],
-            zoom: 15
-        });
-
-        var myPlacemark = new ymaps.Placemark([55.75847412626396,37.60046783664861], {}, {
-        iconLayout: 'default#image',
-        iconImageHref: '/image/contacts/yamap.svg',
-        iconImageSize: [20, 20],
-        iconImageOffset: [0, 0]
-        });
-
-
-        myMap.geoObjects.add(myPlacemark);
-
-
-    }
-
-</script>
-
-<!-- acardion -->
-<script src="/js/app.js"></script>
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script>
-    
-  </script>
-
-<script>
-   
-  </script>
-
-
-
-<script>
-    $(function() {
-      $( "#accordion1" ).accordion({
-        collapsible: true,
-        active: 0,
-
-      } );
-    });
-     $(function() {
-      $( "#accordion2" ).accordion({
-        collapsible: true,
-        active: 0,
-
-      } );
-    });
-    $(function() {
-      $( "#accordion3" ).accordion({
-        collapsible: true,
-        active: 0,
-
-      } );
-    });
-    $(function() {
-      $( "#accordion4" ).accordion({
-        collapsible: true,
-        active: 0,
-
-      } );
-    });
-     $(function() {
-      $( "#accordion5" ).accordion({
-        collapsible: true,
-        active: 0,
-
-      } );
-    });
-
-    $(function() {
-      $( "#accordion6" ).accordion({
-        collapsible: true,
-        active: 0,
-
-      } );
-    }); 
-  </script>
-
-
-
-
-<!-- select -->
-
+<script src="/js/jquery-1.12.4.js"></script>
+<script src="/js/jquery-ui.js"></script>
 <script src="/js/choices.min.js"></script>
-<script>
-    const element = document.querySelector('#filter');
-    const choices = new Choices(element, {
-        searchEnabled: false,
-        placeholder: true,
-        placeholderValue: null,
-    });  
-
-    
-
-</script>
-
-
-<!-- tooltip -->
-
-<script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
-    <script>
-      tippy('#marker1', {
-        content: 'Пример современных тенденций - современная методология разработки',
-      });
-
-      tippy('#marker2', {
-        content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции',
-      });
-
-      tippy('#marker3', {
-        content: 'В стремлении повысить качество',
-      });
-
-
-
-    </script>
-
-<!-- btn-event -->
-<script>
-   jQuery(document).ready(function($){
-  $(".section-events__btn").click(function(e){
-    $(".section-event__item:hidden").slice(0,3).fadeIn();
-    if ($(".section-event__item:hidden").length < 1) $(this).fadeOut();
-  })
-})
-</script>
-
-<!-- tabs -->
-<script src="/js/tabs.js"></script>
-<!-- simplebat -->
-<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-
+<script src="/js/core@2.js"></script>
+<script src="/js/tippy.min.js"></script>
+<script src="/js/simplebar.min.js"></script>
 <script src="/js/mainmenu.js"></script>
-
-
-
-
+<script src="/js/slider.js"></script>
+<script src="/js/tabs.js"></script>
+<script src="/js/modal.js"></script>
+<script src="/js/burger.js"></script>
+<script src="/js/app.js"></script>
 
 </body>
 </html>

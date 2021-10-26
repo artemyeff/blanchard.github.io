@@ -10,21 +10,23 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector(`[data-target="${path}"`).classList.add('is-active')
 
             $('.accordion').accordion("refresh");
+
+            document.querySelectorAll('.section-catalog__list-item').forEach(function(tabContent) {
+                tabContent.classList.remove('is-actives')
+            })
+
+            document.querySelector(`[data-path="${path}"`).classList.add('is-actives')
+            document.querySelectorAll('.section-catalog__content-left-side').forEach(function(tabContent) {
+                tabContent.classList.remove('active')
+            })
+            document
+                .querySelector(`[data-target="${path}"`)
+                .querySelector('.section-catalog__content-left-side')
+                .classList.add('active')
         })
 
         $('.accordion').accordion();
 
-
-        tabsBtn.addEventListener('click', function(event){
-            const path = event.currentTarget.dataset.path
-            
-            document.querySelectorAll('.section-catalog__list-item').forEach(function(tabContent) {
-                tabContent.classList.remove('is-actives')
-            })
-            document.querySelector(`[data-path="${path}"`).classList.add('is-actives')
-            document.querySelector(`[data-target="${path}"`).querySelector('.section-catalog__content-left-side').classList.add('active')
-            
-        })
 
     })
 

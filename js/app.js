@@ -1,35 +1,141 @@
-window.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.section-working__tabs-btn').forEach(function(element) {
-      element.addEventListener('click', function (event) {
-          console.log(event)
-          event.target.classList.toggle('is-active')
-      })
+// select
 
+const element = document.querySelector('#filter');
+const choices = new Choices(element, {
+    searchEnabled: false,
+    placeholder: true,
+    placeholderValue: null,
+});  
+
+
+// accordion
+
+$(function() {
+  $( "#accordion1" ).accordion({
+    collapsible: true,
+    active: 0,
+
+  } );
+});
+ $(function() {
+  $( "#accordion2" ).accordion({
+    collapsible: true,
+    active: 0,
+
+  } );
+});
+$(function() {
+  $( "#accordion3" ).accordion({
+    collapsible: true,
+    active: 0,
+
+  } );
+});
+$(function() {
+  $( "#accordion4" ).accordion({
+    collapsible: true,
+    active: 0,
+
+  } );
+});
+ $(function() {
+  $( "#accordion5" ).accordion({
+    collapsible: true,
+    active: 0,
+
+  } );
+});
+
+$(function() {
+  $( "#accordion6" ).accordion({
+    collapsible: true,
+    active: 0,
+
+  } );
+}); 
+
+
+// tooltip
+
+tippy('#marker1', {
+  content: 'Пример современных тенденций - современная методология разработки',
+});
+
+tippy('#marker2', {
+  content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции',
+});
+
+tippy('#marker3', {
+  content: 'В стремлении повысить качество',
+});
+
+
+// event btn
+
+jQuery(document).ready(function($){
+  $(".section-events__btn").click(function(e){
+    $(".section-event__item:hidden").slice(0,3).fadeIn();
+    if ($(".section-event__item:hidden").length < 1) $(this).fadeOut();
   })
-
-  // document.querySelectorAll('.section-catalog__slider-head').forEach(function(parent) {
-  //   parent.addEventListener('click', () => {
-  //     const icon = parent.querySelector('.section-catalog__spoiler-heading-icon')
-  //     document.querySelectorAll('.section-catalog__spoiler-heading-icon').forEach(function(element) {
-  //       if (icon != element) {
-  //         element.classList.remove('is-active')
-  //       }
-
-  //     })
-  //     parent.querySelector('.section-catalog__spoiler-heading-icon').classList.toggle('is-active')
-  //   })
-  // })
-
-//   document.querySelectorAll('.section-catalog__slider-head').forEach(function(parent) {
-//     parent.addEventListener('click', () => {
-//       const icon = parent.querySelector('.section-catalog__spoiler-heading-image')
-//       document.querySelectorAll('.section-catalog__spoiler-heading-image').forEach(function(element) {
-//         if (icon != element) {
-//           element.classList.remove('is-activ')
-//         }
-
-//       })
-//       parent.querySelector('.section-catalog__spoiler-heading-image').classList.toggle('is-activ')
-//     })
-//   })
 })
+
+// form-mask
+var selector = document.querySelector("input[type='tel']");
+var im = new Inputmask("+7 (999)-999-99-99");
+
+im.mask(selector);
+new JustValidate('.section-contacts__form', {
+    rules: {
+        name: {
+            required: true,
+            minLength: 3,
+            maxLength: 10
+        },
+
+        tel: {
+            required:true,
+            function: (name, value) => {
+                const phone = selector.inputmask.unmaskedvalue()
+                return Number(phone) && phone.length === 10
+            }
+        },
+    },
+    messages: {
+        name: {
+            minLength: 'Минимальная длина поля 3 символа',
+            required: 'Поле обязательно для заполнения!'
+        },
+        tel: {
+          required: 'Поле обязательно для заполнения!'  
+        } 
+        
+
+
+
+        },
+        
+
+        submitHandler: function (form, values, ajax) {
+
+            console.log('tel')
+        },
+
+});
+
+
+// maps
+
+ymaps.ready(init);
+function init(){
+    var myMap = new ymaps.Map("myMap1", {
+        center: [55.75782074110136,37.60973755100408],
+        zoom: 15
+    });
+    var myPlacemark = new ymaps.Placemark([55.75847412626396,37.60046783664861], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: '/image/contacts/yamap.svg',
+    iconImageSize: [20, 20],
+    iconImageOffset: [0, 0]
+    });
+    myMap.geoObjects.add(myPlacemark);
+}
