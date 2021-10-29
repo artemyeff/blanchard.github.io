@@ -128,10 +128,10 @@ new JustValidate('.section-contacts__form', {
 ymaps.ready(init);
 function init(){
     var myMap = new ymaps.Map("myMap1", {
-        center: [55.75782074110136,37.60973755100408],
+        center: [55.75765670291689,37.60009910182183],
         zoom: 15
     });
-    var myPlacemark = new ymaps.Placemark([55.75847412626396,37.60046783664861], {}, {
+    var myPlacemark = new ymaps.Placemark([55.75765670291689,37.60009910182183], {}, {
     iconLayout: 'default#image',
     iconImageHref: '/image/contacts/yamap.svg',
     iconImageSize: [20, 20],
@@ -139,3 +139,17 @@ function init(){
     });
     myMap.geoObjects.add(myPlacemark);
 }
+
+window.onload = () => {
+  if(window.screen.width <= 670) {
+    document.getElementById('catalog-link').setAttribute('href', '#mobile-catalog-link')
+  } 
+}
+
+window.addEventListener('resize', () => {
+  if(window.screen.width <= 670) {
+    document.getElementById('catalog-link').setAttribute('href', '#mobile-catalog-link')
+  } else {
+    document.getElementById('catalog-link').setAttribute('href', '#catalog')
+  }
+})

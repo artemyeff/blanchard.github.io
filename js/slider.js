@@ -241,6 +241,16 @@ window.addEventListener('resize', () => {
 
 
         
+var swiper7 = new Swiper('.container-slider7', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+
+  autoplay: {
+      delay: 10000,
+      disableOnInteraction: false,
+  },
+  effect: 'fade'
+});
 
 
 
