@@ -362,9 +362,9 @@
           <form class="section-gallery__form" action="#">
             <label class="section-gallery__label" for="filter">Фильтр:</label>
             <select class="section-gallery__select" name="filter" id="filter">
-              <option value="material">Живопись</option>
-              <option value="Древесина">Рисунок</option>
-              <option value="Металл">Скульптура</option>
+              <option value="Живопись">Живопись</option>
+              <option value="Рисунок">Рисунок</option>
+              <option value="Скульптура">Скульптура</option>
             </select>
           </form>
         </div>
@@ -2659,13 +2659,15 @@
       <div class="section-contacts__left-side ">
         <h3 class="section-contacts__left-side-heading">Шоурум №4</h3>
         <p class="section-contacts__left-side-addres">Леонтьевский переулок, дом 5/1</p>
-        <form action="http://jsonplaceholder.typicode.com/posts" class="section-contacts__form">
+        <form action="/mail.php" enctype="multipart/form-data" class="section-contacts__form" method="POST">
+          <input type="hidden" name="admin_email[]" value="artemjev.denis2012@yandex.ru">
+          <input type="hidden" name="form_subject" value="Тема письма">
           <h4 class="section-contacts__form-heading">Заказать обратный звонок</h4>
-          <input class="section-contacts__form-input" placeholder="Имя*" type="text" id="name"
+          <input class="section-contacts__form-input" placeholder="Имя*" type="text" name="name" id="name"
             data-validate-field="name" aria-label="Введите свое имя">
-          <input class="section-contacts__form-input" placeholder="Телефон*" type="tel" id="phone"
+          <input class="section-contacts__form-input" placeholder="Телефон*" type="tel" name="tel" id="phone"
             data-validate-field="tel" data-validate-rulse="phone" aria-label="Введите свой телефон">
-          <button class="btn section-contacts__form-btn">Заказать</button>
+          <button class="btn section-contacts__form-btn" type="submit">Заказать</button>
         </form>
         <p class="section-contacts__left-side-description">Связаться в один клик</p>
         <ul class="section-contacts__left-side-list">
@@ -2757,9 +2759,8 @@
     </div>
   </div>
   <div style="z-index: 999" class="overlay js-overlay-modal"></div>
-
-  <script src="/js/inputmask.min.js"></script>
-  <script src="/js/just-validate.min.js"></script>
+  
+  
   <script src="/js/swiper-bundle.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
   <script src="/js/jquery-1.12.4.js"></script>
@@ -2773,7 +2774,11 @@
   <script src="/js/tabs.js"></script>
   <script src="/js/modal.js"></script>
   <script src="/js/burger.js"></script>
-  <script src="/js/app.js"></script>
+  <script src="/js/inputmask.min.js"></script>
+  <script src="/js/just-validate.min.js"></script>
+  <!-- <script src="/js/form.js"></script> -->
+  <script src="/js/app.js?hash=1"></script>
+  
 
 </body>
 
