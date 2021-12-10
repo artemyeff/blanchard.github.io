@@ -93,6 +93,37 @@
 
   .header__contacts {
     display: flex;
+    flex-direction: row;
+  }
+
+  .header__contacts-list {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+  }
+
+  .contacts-svg {
+    width: 40px;
+    margin-right: 20px;
+  }
+
+  .shop-svg {
+    width: 40px;
+  }
+
+  .header__contacts-item {
+    margin-bottom: 10px;
+  }
+
+  .header__contacts-item-link {
+    color: var(--color-white);
+  }
+
+  .callme-button {
+    padding: 10px;
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
+    border-radius: 15px;
   }
 
   .header__social-list {
@@ -126,12 +157,16 @@
     margin-right: 100px;
   }
 
+  .header__signin {
+    color: var(--color-white);
+  }
+
 
   /* HERo */
 
 
   .section__hero {
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0,0,0,.5);
     height: 740px;
     
   }
@@ -185,7 +220,7 @@
   }
 
 
-  .section__catalog-promo::after {
+  .section__catalog-promo::before {
     content: '';
     position: absolute;
     left: 0;
@@ -193,7 +228,7 @@
     right: 0;
     bottom: 0;
     z-index: 0;
-    background-color:rgba(0,0,0,.3);
+    background-color:rgba(0,0,0,.5);
   }
 
   .section__catalog-promo-container {
@@ -211,6 +246,7 @@
     font-weight: 600;
     color: var(--color-white);
     margin-bottom: 40px;
+    z-index: 3;
   }
 
   .section__catalog-description {
@@ -220,7 +256,37 @@
     font-weight: normal;
     color: var(--color-white);
     text-align: center;
+    z-index: 3;
   }
+
+
+  .section__catalog-search {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .search-input {
+    padding-left: 10px ;
+    max-width: 500px;
+    width: 100%;
+    height: 50px;
+    margin-right: 50px;
+    border: 4px solid #1E90FF;
+    border-radius: 15px;
+  }
+
+  .search-button {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: normal;
+    color: var(--color-black);
+    padding: 10px;
+    border: 4px solid #1E90FF;
+    border-radius: 15px;
+  }
+
 
   .section__catalog-content {
     padding-top: 20px;
@@ -233,7 +299,7 @@
     justify-content: space-between;
   }
 
-  .section__catalog-list-item:not(:nth-child(2n)) {
+  .section__catalog-list-item:not(:nth-child(3n)) {
     margin-right: 20px;
     
   }
@@ -241,7 +307,7 @@
 
   .section__catalog-list-item {
     display: flex;
-    flex: 1 1 49%;
+    flex: 1 1 32%;
     /* outline: 2px solid red; */
     height: 620px;
     margin-bottom: 20px;
@@ -462,8 +528,8 @@
     font-size: 18px;
     line-height: 32px;
     font-weight: normal;
-    color: var(--color-black);
-    background-color: #FFE4E1;
+    color: var(--color-white);
+    background-color: #1E90FF;
     border-radius: 30px;
   }
 
@@ -556,3 +622,108 @@
   }
 
 
+
+  /* footer */
+
+.footer {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+.footer__container {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__first-level {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.footer__logo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  display: flex;
+}
+
+.footer__logo-img {
+  margin-bottom: 20px;
+}
+
+.footer__info-heading, .footer__addition-heading {
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 400;
+  color: var(--color-white);
+  margin-bottom: 10px;
+}
+
+.footer__info-list-item, .footer__addition-list-item  {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--color-white);
+  margin-bottom: 5px;
+}
+
+.footer__navigation-list-item {
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--color-white);
+  margin-bottom: 15px;
+}
+
+.footer__social-heading {
+  margin-bottom: 10px;
+}
+
+.footer__social-list {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.footer__social-list-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.svg-social-footer{
+  width: 40px;
+}
+
+
+.footer__call-me {
+  display: flex;
+}
+
+.footer__tel-link {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: normal;
+  color: var(--color-white);
+}
+
+.footer__second-level {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__copy {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.footer__pay-list {
+  display: flex;
+}
+.svg-footer-pay {
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+}
