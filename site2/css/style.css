@@ -23,7 +23,7 @@
     width:100%;
     height:100%;
     margin: 0;
-    background: url(/site2/img/hero-background.jpg) no-repeat 0/cover;
+    background: url(/img/hero-background.jpg) no-repeat 0/cover;
     background-attachment: fixed;
     background-position: center top;
   }
@@ -248,7 +248,7 @@
 
   .section__catalog-promo {
     height: 480px;
-    background: url(/site2/img/catalog-background.jpg) center center no-repeat;
+    background: url(/img/catalog-background.jpg) center center no-repeat;
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -467,7 +467,7 @@
   /* ABOUT */
 
   .section-about {
-    background: url(/site2/img/about-bg.jpg);
+    background: url(/img/about-bg.jpg);
   }
 
   .section-about__container {
@@ -1183,5 +1183,103 @@
     align-items: center;
   }
 
+
+}
+
+@media (max-width: 400px) {
+  .section__hero-content-heading {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .section__hero-content-description {
+    font-size: 12px;
+  }
+
+  .section__catalog-heading {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .section__catalog-description {
+    font-size: 12px;
+  }
+
+  .search-input {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  .search-button {
+    font-size: 18px;
+  }
+
+  .section__catalog-question-descriptions {
+    font-size: 12px;
+  }
+
+  .section__catalog-questions-btn {
+     font-size: 12px;
+  }
+
+  .sections__products-container {
+    padding: 20px;
+  }
+
+  .section-about__heading {
+    font-size: 30px;
+  }
+
+  .section-about__description {
+    font-size: 12px;
+  }
+
+  .section-service__container {
+    padding: 30px 0;
+}
+
+.section-service__list-item-image {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 70px;
+}
+
+.section-service__list-item-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section-service__list-item-description {
+  font-size: 12px;
+}
+
+.slide-slider2 {
+  display: flex;
+  flex-direction: column;
+} 
+
+.section-news__slide-left-side {
+  margin-right: 0px;
+}
+
+.section-news__heading {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.section-news__form-heading {
+  font-size: 25px;
+}
+
+.section-news__form-sub-input {
+  width: 250px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.section__catalog-list-item {
+  height: 400px;
+}
 
 }
