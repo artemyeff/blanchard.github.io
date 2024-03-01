@@ -1,0 +1,187 @@
+.skills {
+    &__row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        &__col {
+            max-width: 1120px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    &__desc {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__subtitle{
+        font-family: "Montserrat";
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        max-width: 800px;
+        text-align: center;
+        margin-bottom: 30px;
+        &__centred {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        // width: 920px;
+        
+        &__item {
+            width: calc(33% - 30px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 15px;
+            margin-bottom: 10px;
+            &__icon {
+                margin-bottom: 10px;
+                svg {
+                    height: 30px;
+                }
+            }
+
+            &__text {
+                font-size: 14px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media(min-width:600px) {
+    .skills {
+        &__row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            &__col {
+                max-width: 800px;
+            }
+        }
+
+    
+        &__text {
+            max-width: 800px;
+            text-align: center;
+            margin-bottom: 30px;
+            &__centred {
+                display: flex;
+                align-items: center;
+            }
+        }
+    
+        &__list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            // width: 920px;
+            
+            &__item {
+                width: calc(20% - 30px);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 15px;
+                margin-bottom: 10px;
+                &__icon {
+                    margin-bottom: 10px;
+                    svg {
+                        height: 50px;
+                    }
+                }
+    
+                &__text {
+                    font-size: 14px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1024px) {
+    .skills {
+        &__row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            &__col {
+                max-width: 1120px;
+            }
+        }
+    
+        &__list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 920px;
+            
+            &__item {
+                width: calc(20% - 30px);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 15px;
+                margin-bottom: 30px;
+                &__icon {
+                    margin-bottom: 15px;
+                    svg {
+                        height: 70px;
+                    }
+                }
+    
+                &__text {
+                    font-size: 24px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1200px) {
+    .skills {
+        &__list {
+            width: 920px;
+            
+            &__item {
+                &__icon {
+                    margin-bottom: 15px;
+                    svg {
+                        height: 128px;
+                    }
+                }
+            }
+        }
+    }
+}
