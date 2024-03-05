@@ -1303,6 +1303,12 @@ button {
   margin-bottom: 10px;
   text-decoration: none;
 }
+.contacts .btn {
+  margin-top: 20px;
+}
+.contacts .btn svg {
+  width: 24px;
+}
 
 @media (min-width: 1024px) {
   .contacts__row {
@@ -1319,5 +1325,11 @@ button {
     font-family: "Poppins";
     margin-bottom: 10px;
     text-decoration: none;
+  }
+  .contacts .btn {
+    margin-top: 20px;
+  }
+  .contacts .btn svg {
+    width: 24px;
   }
 }/*# sourceMappingURL=main.css.map */
