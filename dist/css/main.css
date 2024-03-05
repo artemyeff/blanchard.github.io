@@ -524,6 +524,20 @@ button {
     position: relative;
     width: 100px;
   }
+  .header .nav__list__item__link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    bottom: -10px;
+    background-color: #379687;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  .header .nav__list__item__link:hover::before {
+    opacity: 1;
+  }
   .header .nav__list__item__link .active {
     position: absolute;
     left: 0;

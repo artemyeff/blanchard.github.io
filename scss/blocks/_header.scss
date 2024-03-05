@@ -171,6 +171,22 @@
             text-decoration: none;
             position: relative;
             width: 100px;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                height: 2px;
+                bottom: -10px;
+                background-color: #379687;
+                opacity: 0;
+                transition: opacity .2s ease-in-out;
+            }
+            &:hover {
+                &::before {
+                    opacity: 1;
+                }
+            }
             .active {
                 position: absolute;
                 left: 0;
