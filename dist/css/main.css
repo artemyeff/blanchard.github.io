@@ -800,7 +800,7 @@ button {
     flex-wrap: wrap;
   }
   .skills__list__item {
-    width: calc(20% - 30px);
+    width: calc(16.6666666667% - 30px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -835,10 +835,10 @@ button {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    width: 920px;
+    width: 1024px;
   }
   .skills__list__item {
-    width: calc(20% - 30px);
+    width: calc(16.6666666667% - 30px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -969,6 +969,7 @@ button {
     list-style: none;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     width: 720px;
     margin-bottom: 40px;
@@ -987,7 +988,7 @@ button {
     font-weight: 700;
     text-decoration: none;
   }
-  .portfolio__list__item:nth-child(5), .portfolio__list__item:nth-child(6), .portfolio__list__item:nth-child(7) {
+  .portfolio__list__item:nth-child(5), .portfolio__list__item:nth-child(6), .portfolio__list__item:nth-child(7), .portfolio__list__item:nth-child(12), .portfolio__list__item:nth-child(13), .portfolio__list__item:nth-child(14) {
     width: calc(33% - 30px);
   }
   .portfolio__list__item:last-child {

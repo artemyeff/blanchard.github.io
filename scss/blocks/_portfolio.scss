@@ -113,6 +113,7 @@
             list-style: none;
             display: flex;
             align-items: center;
+            justify-content: center; 
             flex-wrap: wrap;
             width: 720px;
             margin-bottom: 40px;
@@ -122,6 +123,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                
                 margin: 0 15px;
                 margin-bottom: 15px;
                 a {
@@ -132,7 +134,10 @@
         
                 &:nth-child(5),
                 &:nth-child(6),
-                &:nth-child(7) {
+                &:nth-child(7),
+                &:nth-child(12),
+                &:nth-child(13),
+                &:nth-child(14) {
                     width: calc(33% - 30px);
                 }
                 &:last-child {
